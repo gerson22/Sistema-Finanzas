@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="finanzasDataSet" targetNamespace="http://tempuri.org/finanzasDataSet.xsd" xmlns:mstns="http://tempuri.org/finanzasDataSet.xsd" xmlns="http://tempuri.org/finanzasDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="finanzasConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="finanzasConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SOFT_Finanzas.Properties.Settings.GlobalReference.Default.finanzasConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="capacitacionTableAdapter" GeneratorDataComponentClassName="capacitacionTableAdapter" Name="capacitacion" UserDataComponentName="capacitacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.capacitacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Nombre`, `Pago_capacitador`, `Material`, `Fecha`, `Capacitadores_id` FROM `capacitacion`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="capacitadoresTableAdapter" GeneratorDataComponentClassName="capacitadoresTableAdapter" Name="capacitadores" UserDataComponentName="capacitadoresTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.capacitadores" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Nombre`, `Apellidos`, `Telefono` FROM `capacitadores`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="compra_materialTableAdapter" GeneratorDataComponentClassName="compra_materialTableAdapter" Name="compra_material" UserDataComponentName="compra_materialTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.compra_material" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Nombre`, `Cantidad`, `Precio`, `Fecha`, `Status` FROM `compra_material`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="compra_productosTableAdapter" GeneratorDataComponentClassName="compra_productosTableAdapter" Name="compra_productos" UserDataComponentName="compra_productosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.compra_productos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Nombre`, `Cantidad`, `Precio`, `Costo`, `Fecha`, `status` FROM `compra_productos`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="empleadosTableAdapter" GeneratorDataComponentClassName="empleadosTableAdapter" Name="empleados" UserDataComponentName="empleadosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.empleados" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Nombre`, `Apellidos`, `Direccion`, `Sueldo_base`, `Tipo_Emp_id`, `usuarios`, `pass`, `status` FROM `empleados`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="enviosTableAdapter" GeneratorDataComponentClassName="enviosTableAdapter" Name="envios" UserDataComponentName="enviosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.envios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Gas`, `Incidentes`, `Destino`, `Fecha` FROM `envios`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="liquidacionTableAdapter" GeneratorDataComponentClassName="liquidacionTableAdapter" Name="liquidacion" UserDataComponentName="liquidacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.liquidacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `antiguedad`, `liquidacion`, `Empleados_id`, `Empleados_Tipo_Emp_id`, `Total` FROM `liquidacion`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nominaTableAdapter" GeneratorDataComponentClassName="nominaTableAdapter" Name="nomina" UserDataComponentName="nominaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.nomina" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Sueldo`, `Infonnavit`, `Seguro`, `Prestaciones`, `Incentivos`, `ISR`, `Sueldo_Total`, `Fecha`, `Empledos_id`, `Empledos_Tipo_Emp_id`, `Tipo_pago` FROM `nomina`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="serviciosTableAdapter" GeneratorDataComponentClassName="serviciosTableAdapter" Name="servicios" UserDataComponentName="serviciosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.servicios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Fecha`, `Nombre`, `Costo` FROM `servicios`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="solicitudes_de_aumentoTableAdapter" GeneratorDataComponentClassName="solicitudes_de_aumentoTableAdapter" Name="solicitudes_de_aumento" UserDataComponentName="solicitudes_de_aumentoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.solicitudes_de_aumento" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Sueldo_Anterior`, `Sueldo_Propuesto`, `Status`, `Empleados_id`, `Empleados_Tipo_Emp_id` FROM `solicitudes_de_aumento`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tipo_empTableAdapter" GeneratorDataComponentClassName="tipo_empTableAdapter" Name="tipo_emp" UserDataComponentName="tipo_empTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.tipo_emp" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Nombre`, `Pago_Minimo`, `Pago_Maximo` FROM `tipo_emp`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ventasTableAdapter" GeneratorDataComponentClassName="ventasTableAdapter" Name="ventas" UserDataComponentName="ventasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.ventas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Ganacia`, `Mermas`, `Fecha_inicio`, `Fecha_fin`, `Comentarios` FROM `ventas`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="viaticosTableAdapter" GeneratorDataComponentClassName="viaticosTableAdapter" Name="viaticos" UserDataComponentName="viaticosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="finanzas.viaticos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Hospedaje`, `Alimentos`, `Transporte`, `Lugar_destino`, `Fecha`, `Total_viatico`, `Empleados_id`, `Empleados_Tipo_Emp_id` FROM `viaticos`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="finanzasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="finanzasDataSet" msprop:Generator_UserDSName="finanzasDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="capacitacion" msprop:Generator_TableClassName="capacitacionDataTable" msprop:Generator_TableVarName="tablecapacitacion" msprop:Generator_TablePropName="capacitacion" msprop:Generator_RowDeletingName="capacitacionRowDeleting" msprop:Generator_RowChangingName="capacitacionRowChanging" msprop:Generator_RowEvHandlerName="capacitacionRowChangeEventHandler" msprop:Generator_RowDeletedName="capacitacionRowDeleted" msprop:Generator_UserTableName="capacitacion" msprop:Generator_RowChangedName="capacitacionRowChanged" msprop:Generator_RowEvArgName="capacitacionRowChangeEvent" msprop:Generator_RowClassName="capacitacionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="capacitadores" msprop:Generator_TableClassName="capacitadoresDataTable" msprop:Generator_TableVarName="tablecapacitadores" msprop:Generator_TablePropName="capacitadores" msprop:Generator_RowDeletingName="capacitadoresRowDeleting" msprop:Generator_RowChangingName="capacitadoresRowChanging" msprop:Generator_RowEvHandlerName="capacitadoresRowChangeEventHandler" msprop:Generator_RowDeletedName="capacitadoresRowDeleted" msprop:Generator_UserTableName="capacitadores" msprop:Generator_RowChangedName="capacitadoresRowChanged" msprop:Generator_RowEvArgName="capacitadoresRowChangeEvent" msprop:Generator_RowClassName="capacitadoresRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="compra_material" msprop:Generator_TableClassName="compra_materialDataTable" msprop:Generator_TableVarName="tablecompra_material" msprop:Generator_TablePropName="compra_material" msprop:Generator_RowDeletingName="compra_materialRowDeleting" msprop:Generator_RowChangingName="compra_materialRowChanging" msprop:Generator_RowEvHandlerName="compra_materialRowChangeEventHandler" msprop:Generator_RowDeletedName="compra_materialRowDeleted" msprop:Generator_UserTableName="compra_material" msprop:Generator_RowChangedName="compra_materialRowChanged" msprop:Generator_RowEvArgName="compra_materialRowChangeEvent" msprop:Generator_RowClassName="compra_materialRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="compra_productos" msprop:Generator_TableClassName="compra_productosDataTable" msprop:Generator_TableVarName="tablecompra_productos" msprop:Generator_TablePropName="compra_productos" msprop:Generator_RowDeletingName="compra_productosRowDeleting" msprop:Generator_RowChangingName="compra_productosRowChanging" msprop:Generator_RowEvHandlerName="compra_productosRowChangeEventHandler" msprop:Generator_RowDeletedName="compra_productosRowDeleted" msprop:Generator_UserTableName="compra_productos" msprop:Generator_RowChangedName="compra_productosRowChanged" msprop:Generator_RowEvArgName="compra_productosRowChangeEvent" msprop:Generator_RowClassName="compra_productosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="empleados" msprop:Generator_TableClassName="empleadosDataTable" msprop:Generator_TableVarName="tableempleados" msprop:Generator_TablePropName="empleados" msprop:Generator_RowDeletingName="empleadosRowDeleting" msprop:Generator_RowChangingName="empleadosRowChanging" msprop:Generator_RowEvHandlerName="empleadosRowChangeEventHandler" msprop:Generator_RowDeletedName="empleadosRowDeleted" msprop:Generator_UserTableName="empleados" msprop:Generator_RowChangedName="empleadosRowChanged" msprop:Generator_RowEvArgName="empleadosRowChangeEvent" msprop:Generator_RowClassName="empleadosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="envios" msprop:Generator_TableClassName="enviosDataTable" msprop:Generator_TableVarName="tableenvios" msprop:Generator_TablePropName="envios" msprop:Generator_RowDeletingName="enviosRowDeleting" msprop:Generator_RowChangingName="enviosRowChanging" msprop:Generator_RowEvHandlerName="enviosRowChangeEventHandler" msprop:Generator_RowDeletedName="enviosRowDeleted" msprop:Generator_UserTableName="envios" msprop:Generator_RowChangedName="enviosRowChanged" msprop:Generator_RowEvArgName="enviosRowChangeEvent" msprop:Generator_RowClassName="enviosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="liquidacion" msprop:Generator_TableClassName="liquidacionDataTable" msprop:Generator_TableVarName="tableliquidacion" msprop:Generator_TablePropName="liquidacion" msprop:Generator_RowDeletingName="liquidacionRowDeleting" msprop:Generator_RowChangingName="liquidacionRowChanging" msprop:Generator_RowEvHandlerName="liquidacionRowChangeEventHandler" msprop:Generator_RowDeletedName="liquidacionRowDeleted" msprop:Generator_UserTableName="liquidacion" msprop:Generator_RowChangedName="liquidacionRowChanged" msprop:Generator_RowEvArgName="liquidacionRowChangeEvent" msprop:Generator_RowClassName="liquidacionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nomina" msprop:Generator_TableClassName="nominaDataTable" msprop:Generator_TableVarName="tablenomina" msprop:Generator_TablePropName="nomina" msprop:Generator_RowDeletingName="nominaRowDeleting" msprop:Generator_RowChangingName="nominaRowChanging" msprop:Generator_RowEvHandlerName="nominaRowChangeEventHandler" msprop:Generator_RowDeletedName="nominaRowDeleted" msprop:Generator_UserTableName="nomina" msprop:Generator_RowChangedName="nominaRowChanged" msprop:Generator_RowEvArgName="nominaRowChangeEvent" msprop:Generator_RowClassName="nominaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="servicios" msprop:Generator_TableClassName="serviciosDataTable" msprop:Generator_TableVarName="tableservicios" msprop:Generator_TablePropName="servicios" msprop:Generator_RowDeletingName="serviciosRowDeleting" msprop:Generator_RowChangingName="serviciosRowChanging" msprop:Generator_RowEvHandlerName="serviciosRowChangeEventHandler" msprop:Generator_RowDeletedName="serviciosRowDeleted" msprop:Generator_UserTableName="servicios" msprop:Generator_RowChangedName="serviciosRowChanged" msprop:Generator_RowEvArgName="serviciosRowChangeEvent" msprop:Generator_RowClassName="serviciosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="solicitudes_de_aumento" msprop:Generator_TableClassName="solicitudes_de_aumentoDataTable" msprop:Generator_TableVarName="tablesolicitudes_de_aumento" msprop:Generator_TablePropName="solicitudes_de_aumento" msprop:Generator_RowDeletingName="solicitudes_de_aumentoRowDeleting" msprop:Generator_RowChangingName="solicitudes_de_aumentoRowChanging" msprop:Generator_RowEvHandlerName="solicitudes_de_aumentoRowChangeEventHandler" msprop:Generator_RowDeletedName="solicitudes_de_aumentoRowDeleted" msprop:Generator_UserTableName="solicitudes_de_aumento" msprop:Generator_RowChangedName="solicitudes_de_aumentoRowChanged" msprop:Generator_RowEvArgName="solicitudes_de_aumentoRowChangeEvent" msprop:Generator_RowClassName="solicitudes_de_aumentoRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tipo_emp" msprop:Generator_TableClassName="tipo_empDataTable" msprop:Generator_TableVarName="tabletipo_emp" msprop:Generator_TablePropName="tipo_emp" msprop:Generator_RowDeletingName="tipo_empRowDeleting" msprop:Generator_RowChangingName="tipo_empRowChanging" msprop:Generator_RowEvHandlerName="tipo_empRowChangeEventHandler" msprop:Generator_RowDeletedName="tipo_empRowDeleted" msprop:Generator_UserTableName="tipo_emp" msprop:Generator_RowChangedName="tipo_empRowChanged" msprop:Generator_RowEvArgName="tipo_empRowChangeEvent" msprop:Generator_RowClassName="tipo_empRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ventas" msprop:Generator_TableClassName="ventasDataTable" msprop:Generator_TableVarName="tableventas" msprop:Generator_TablePropName="ventas" msprop:Generator_RowDeletingName="ventasRowDeleting" msprop:Generator_RowChangingName="ventasRowChanging" msprop:Generator_RowEvHandlerName="ventasRowChangeEventHandler" msprop:Generator_RowDeletedName="ventasRowDeleted" msprop:Generator_UserTableName="ventas" msprop:Generator_RowChangedName="ventasRowChanged" msprop:Generator_RowEvArgName="ventasRowChangeEvent" msprop:Generator_RowClassName="ventasRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="viaticos" msprop:Generator_TableClassName="viaticosDataTable" msprop:Generator_TableVarName="tableviaticos" msprop:Generator_TablePropName="viaticos" msprop:Generator_RowDeletingName="viaticosRowDeleting" msprop:Generator_RowChangingName="viaticosRowChanging" msprop:Generator_RowEvHandlerName="viaticosRowChangeEventHandler" msprop:Generator_RowDeletedName="viaticosRowDeleted" msprop:Generator_UserTableName="viaticos" msprop:Generator_RowChangedName="viaticosRowChanged" msprop:Generator_RowEvArgName="viaticosRowChangeEvent" msprop:Generator_RowClassName="viaticosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

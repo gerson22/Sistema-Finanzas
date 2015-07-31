@@ -1,0 +1,20 @@
+c:\users\gerson_isaias\documents\visual studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\bin\Debug\SOFT Finanzas.exe.config
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT Finanzas.csprojResolveAssemblyReference.cache
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Form1.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Properties.Resources.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT Finanzas.csproj.GenerateResource.Cache
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\bin\Debug\SOFT Finanzas.exe
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\bin\Debug\SOFT Finanzas.pdb
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\bin\Debug\MetroFramework.dll
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT Finanzas.exe
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT Finanzas.pdb
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Login.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Panel_Gerente_Finanzas.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Panel_Contador.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.LiqForm.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Panel_Rec_Humanos.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Panel_Jefe_Area.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Panel_Reporte.resources
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\bin\Debug\MetroFramework.Design.dll
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Reportes.resources
