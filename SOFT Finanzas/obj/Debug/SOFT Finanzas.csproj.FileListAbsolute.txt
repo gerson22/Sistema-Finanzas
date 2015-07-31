@@ -18,3 +18,6 @@ C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT 
 C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\bin\Debug\MetroFramework.Design.dll
 C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Gerson_Isaias\Documents\Visual Studio 2013\Projects\SOFT Finanzas\SOFT Finanzas\obj\Debug\SOFT_Finanzas.Reportes.resources
+C:\Users\Gerson_Isaias\Desktop\Sistema-Finanzas\SOFT Finanzas\bin\Debug\SOFT Finanzas.exe.config
+C:\Users\Gerson_Isaias\Desktop\Sistema-Finanzas\SOFT Finanzas\obj\Debug\SOFT Finanzas.exe
+C:\Users\Gerson_Isaias\Desktop\Sistema-Finanzas\SOFT Finanzas\obj\Debug\SOFT Finanzas.pdb
