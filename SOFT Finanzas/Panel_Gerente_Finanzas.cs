@@ -327,7 +327,7 @@ namespace SOFT_Finanzas
         private void dgvEmpleados_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             //Este nos funciona para que cuando seleccionemos algun renglon nas mande los datos a un label y al mismo tiempo los haga visbles
-            if (MessageBox.Show("Seguro que deseas realizar un cambio en el status del empleado justo ahora", "A T E N C I O N", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MetroMessageBox.Show(this,"Seguro que deseas realizar un cambio en el status del empleado justo ahora", "A T E N C I O N", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 DataGridViewRow dgv = dgvEmpleados.Rows[e.RowIndex];
                 ID.Text = dgv.Cells[0].Value.ToString();
@@ -359,43 +359,60 @@ namespace SOFT_Finanzas
             {
                 try
                 {
-
-                    MySqlConnection cnx;
-                    cnx = conexion.conectar();
-
-
-                    if (empleadoDAO.Actualizar(status_Update.Text, Convert.ToInt32(ID.Text)) == false)
+                    MySqlDataReader reader;
+                    reader = Sueldo.RangoSueldoAlta(tip.Text);//Se buscan  el rangos del sueldo que puede tener ese tipo de empleado//
+                    if (reader.Read())//si devuelve valores se realizara una comparativa para saber si el aumneto queda entre los rangos establecido
                     {
-                        MetroMessageBox.Show(this, "Error en la inserción");
-                    }
-                    else
-                    {
+                        double pagomax = Convert.ToDouble(reader.GetValue(1));
+                        double pagomin = Convert.ToDouble(reader.GetValue(0));
 
-                        MetroMessageBox.Show(this, "Datos actualizados exitosamente","Exito",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                        //Con este foreach hacemos que se recorra el dgv y poder eliminar la solicitud por que ya se convierte en un activo
-                        foreach (DataGridViewRow ren in dgvEmpleados.Rows)
                         {
-                            if (ren.Cells[0].Value != null)
+                            if (Convert.ToDouble(suelbas.Text) <= pagomax && Convert.ToDouble(suelbas.Text) >= pagomin)
                             {
-                                if (ren.Cells[0].Value.ToString() == ID.Text)
-                                {
-                                    dgvEmpleados.Rows.Remove(ren);
-                                }
-                            }
-                        }
-                        ID.Visible = false;
-                        nomEmp.Visible = false;
-                        apellido.Visible = false;
-                        direc.Visible = false;
-                        tip.Visible = false;
-                        suelbas.Visible = false;
-                        usuario.Visible = false;
-                        btnEnvEmp.Visible = false;
-                        status_Update.Visible = false;
-                        dat_Emp.Visible = false;
+                                MySqlConnection cnx;
+                                cnx = conexion.conectar();
 
+
+                                if (empleadoDAO.Actualizar(status_Update.Text, Convert.ToInt32(ID.Text), double.Parse(suelbas.Text)) == false)
+                                {
+                                    MetroMessageBox.Show(this, "Error en la inserción");
+                                }
+                                else
+                                {
+
+                                    MetroMessageBox.Show(this, "Datos actualizados exitosamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    //Con este foreach hacemos que se recorra el dgv y poder eliminar la solicitud por que ya se convierte en un activo
+                                    foreach (DataGridViewRow ren in dgvEmpleados.Rows)
+                                    {
+                                        if (ren.Cells[0].Value != null)
+                                        {
+                                            if (ren.Cells[0].Value.ToString() == ID.Text)
+                                            {
+                                                dgvEmpleados.Rows.Remove(ren);
+                                            }
+                                        }
+                                    }
+                                    ID.Visible = false;
+                                    nomEmp.Visible = false;
+                                    apellido.Visible = false;
+                                    direc.Visible = false;
+                                    tip.Visible = false;
+                                    suelbas.Visible = false;
+                                    usuario.Visible = false;
+                                    btnEnvEmp.Visible = false;
+                                    status_Update.Visible = false;
+                                    dat_Emp.Visible = false;
+
+                                }
+                                cnx.Close();
+                            }
+                            else
+                            {
+                                MetroMessageBox.Show(this,"El sueldo que quiere asignar esta fuera del rango establecido","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                            }
+
+                        }
                     }
-                    cnx.Close();
                 }
                 catch
                 {
@@ -1346,7 +1363,9 @@ namespace SOFT_Finanzas
 
         private void GenRepIngEgr_Click(object sender, EventArgs e)
         {
-
+            Panel_Reporte PanRep = new Panel_Reporte();
+            PanRep.FocusMe();
+            PanRep.ShowDialog();
         }
 
         private void metroButton1_Click_6(object sender, EventArgs e)

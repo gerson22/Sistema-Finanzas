@@ -27,5 +27,15 @@ namespace SOFT_Finanzas
         {
 
         }
+
+        private void metroLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fechaFin_report_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

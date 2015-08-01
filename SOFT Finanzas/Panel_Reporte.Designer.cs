@@ -42,54 +42,67 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.fecha_inicioVent = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.fechaFinRep = new System.Windows.Forms.DateTimePicker();
             this.bntGenerarReporte = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroTile10
             // 
+            this.metroTile10.ActiveControl = null;
             this.metroTile10.Location = new System.Drawing.Point(484, 66);
             this.metroTile10.Name = "metroTile10";
             this.metroTile10.Size = new System.Drawing.Size(10, 10);
             this.metroTile10.TabIndex = 49;
+            this.metroTile10.UseSelectable = true;
             // 
             // metroTile9
             // 
+            this.metroTile9.ActiveControl = null;
             this.metroTile9.Location = new System.Drawing.Point(468, 66);
             this.metroTile9.Name = "metroTile9";
             this.metroTile9.Size = new System.Drawing.Size(10, 10);
             this.metroTile9.TabIndex = 48;
+            this.metroTile9.UseSelectable = true;
             // 
             // metroTile8
             // 
+            this.metroTile8.ActiveControl = null;
             this.metroTile8.Location = new System.Drawing.Point(452, 66);
             this.metroTile8.Name = "metroTile8";
             this.metroTile8.Size = new System.Drawing.Size(10, 10);
             this.metroTile8.TabIndex = 47;
+            this.metroTile8.UseSelectable = true;
             // 
             // metroTile7
             // 
+            this.metroTile7.ActiveControl = null;
             this.metroTile7.Location = new System.Drawing.Point(436, 66);
             this.metroTile7.Name = "metroTile7";
             this.metroTile7.Size = new System.Drawing.Size(11, 10);
             this.metroTile7.TabIndex = 46;
+            this.metroTile7.UseSelectable = true;
             // 
             // metroTile6
             // 
+            this.metroTile6.ActiveControl = null;
             this.metroTile6.Location = new System.Drawing.Point(15, 66);
             this.metroTile6.Name = "metroTile6";
             this.metroTile6.Size = new System.Drawing.Size(415, 10);
             this.metroTile6.TabIndex = 45;
+            this.metroTile6.UseSelectable = true;
             // 
             // metroTile5
             // 
+            this.metroTile5.ActiveControl = null;
             this.metroTile5.Location = new System.Drawing.Point(484, 47);
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(10, 11);
             this.metroTile5.TabIndex = 44;
+            this.metroTile5.UseSelectable = true;
             // 
             // metroTile1
             // 
+            this.metroTile1.ActiveControl = null;
             this.metroTile1.Location = new System.Drawing.Point(14, 24);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(416, 34);
@@ -97,27 +110,34 @@
             this.metroTile1.Text = "Reportes  | MARTI";
             this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile1.UseSelectable = true;
             // 
             // metroTile2
             // 
+            this.metroTile2.ActiveControl = null;
             this.metroTile2.Location = new System.Drawing.Point(436, 24);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(11, 35);
             this.metroTile2.TabIndex = 41;
+            this.metroTile2.UseSelectable = true;
             // 
             // metroTile4
             // 
+            this.metroTile4.ActiveControl = null;
             this.metroTile4.Location = new System.Drawing.Point(468, 34);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(10, 24);
             this.metroTile4.TabIndex = 43;
+            this.metroTile4.UseSelectable = true;
             // 
             // metroTile3
             // 
+            this.metroTile3.ActiveControl = null;
             this.metroTile3.Location = new System.Drawing.Point(452, 26);
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(10, 33);
             this.metroTile3.TabIndex = 42;
+            this.metroTile3.UseSelectable = true;
             // 
             // label1
             // 
@@ -160,16 +180,16 @@
             this.fecha_inicioVent.TabIndex = 54;
             this.fecha_inicioVent.Value = new System.DateTime(2015, 7, 27, 0, 0, 0, 0);
             // 
-            // dateTimePicker1
+            // fechaFinRep
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.Alpha;
-            this.dateTimePicker1.Location = new System.Drawing.Point(210, 200);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 55;
-            this.dateTimePicker1.Value = new System.DateTime(2015, 7, 27, 0, 0, 0, 0);
+            this.fechaFinRep.CustomFormat = "yyyy-MM-dd";
+            this.fechaFinRep.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fechaFinRep.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.fechaFinRep.Location = new System.Drawing.Point(210, 200);
+            this.fechaFinRep.Name = "fechaFinRep";
+            this.fechaFinRep.Size = new System.Drawing.Size(200, 20);
+            this.fechaFinRep.TabIndex = 55;
+            this.fechaFinRep.Value = new System.DateTime(2015, 7, 27, 0, 0, 0, 0);
             // 
             // bntGenerarReporte
             // 
@@ -178,6 +198,8 @@
             this.bntGenerarReporte.Size = new System.Drawing.Size(106, 48);
             this.bntGenerarReporte.TabIndex = 56;
             this.bntGenerarReporte.Text = "Generar";
+            this.bntGenerarReporte.UseSelectable = true;
+            this.bntGenerarReporte.Click += new System.EventHandler(this.bntGenerarReporte_Click);
             // 
             // Panel_Reporte
             // 
@@ -185,7 +207,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 264);
             this.Controls.Add(this.bntGenerarReporte);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.fechaFinRep);
             this.Controls.Add(this.fecha_inicioVent);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -202,6 +224,7 @@
             this.Controls.Add(this.metroTile3);
             this.Name = "Panel_Reporte";
             this.Text = "Panel_Reporte";
+            this.Load += new System.EventHandler(this.Panel_Reporte_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,7 +246,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker fecha_inicioVent;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker fechaFinRep;
         private MetroFramework.Controls.MetroButton bntGenerarReporte;
     }
 }
