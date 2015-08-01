@@ -26,12 +26,12 @@ namespace SOFT_Finanzas
                 return false;
             }
         }
-        public static bool Actualizar(string status,int id)
+        public static bool Actualizar(string status,int id,double sueldo)
         {
             MySqlConnection con;
             con = conexion.conectar();
 
-            string update = string.Format("Update empleados set  status =  '"+ status + "' where id = " + id + "");
+            string update = string.Format("Update empleados set  status =  '"+ status + "' sueldo_Base = '"+sueldo+"' where id = " + id + "");
             MySqlCommand comando = new MySqlCommand(update, con);
             int i = comando.ExecuteNonQuery();
             if (i > 0)

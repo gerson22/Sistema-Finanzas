@@ -21,6 +21,18 @@ namespace SOFT_Finanzas
             consulta = Query.ExecuteReader();
             return consulta;
         }
+        public static MySqlDataReader RangoSueldoAlta(string puesto)
+        {
+            MySqlConnection con;
+            con = conexion.conectar();
+            MySqlDataReader consulta;
+
+            MySqlCommand Query = new MySqlCommand();
+            Query.CommandText = "SELECT Pago_Minimo,Pago_Maximo FROM finanzas.tipo_emp where id = (Select id from Nombre = '"+puesto+"') and Pago_Minimo != 'null' and Pago_Minimo != 0 and  Pago_Maximo != 'null'";
+            Query.Connection = con;
+            consulta = Query.ExecuteReader();
+            return consulta;
+        }
         public static bool Eliminar_sol_suel(int id)
         {
             MySqlConnection con;

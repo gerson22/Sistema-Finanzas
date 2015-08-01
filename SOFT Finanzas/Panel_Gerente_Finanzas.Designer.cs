@@ -94,7 +94,6 @@
             this.nomEmp = new System.Windows.Forms.Label();
             this.apellido = new System.Windows.Forms.Label();
             this.direc = new System.Windows.Forms.Label();
-            this.suelbas = new System.Windows.Forms.Label();
             this.tip = new System.Windows.Forms.Label();
             this.usuario = new System.Windows.Forms.Label();
             this.status_Update = new System.Windows.Forms.ComboBox();
@@ -320,6 +319,8 @@
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.btnConfig = new MetroFramework.Controls.MetroButton();
+            this.sul = new System.Windows.Forms.Label();
+            this.suelbas = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpTotal)).BeginInit();
             this.Pestañas_sol.SuspendLayout();
@@ -970,11 +971,12 @@
             // 
             // metroPanel2
             // 
+            this.metroPanel2.Controls.Add(this.suelbas);
             this.metroPanel2.Controls.Add(this.ID);
             this.metroPanel2.Controls.Add(this.nomEmp);
             this.metroPanel2.Controls.Add(this.apellido);
             this.metroPanel2.Controls.Add(this.direc);
-            this.metroPanel2.Controls.Add(this.suelbas);
+            this.metroPanel2.Controls.Add(this.sul);
             this.metroPanel2.Controls.Add(this.tip);
             this.metroPanel2.Controls.Add(this.btnEnvEmp);
             this.metroPanel2.Controls.Add(this.usuario);
@@ -1030,21 +1032,11 @@
             this.direc.TabIndex = 6;
             this.direc.Text = "Dirección";
             // 
-            // suelbas
-            // 
-            this.suelbas.AutoSize = true;
-            this.suelbas.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.suelbas.Location = new System.Drawing.Point(179, 37);
-            this.suelbas.Name = "suelbas";
-            this.suelbas.Size = new System.Drawing.Size(90, 20);
-            this.suelbas.TabIndex = 7;
-            this.suelbas.Text = "Sueldo Base";
-            // 
             // tip
             // 
             this.tip.AutoSize = true;
             this.tip.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip.Location = new System.Drawing.Point(188, 85);
+            this.tip.Location = new System.Drawing.Point(188, 107);
             this.tip.Name = "tip";
             this.tip.Size = new System.Drawing.Size(39, 20);
             this.tip.TabIndex = 8;
@@ -3481,6 +3473,29 @@
             this.btnConfig.UseSelectable = true;
             this.btnConfig.Click += new System.EventHandler(this.metroButton1_Click_6);
             // 
+            // sul
+            // 
+            this.sul.AutoSize = true;
+            this.sul.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sul.Location = new System.Drawing.Point(179, 37);
+            this.sul.Name = "sul";
+            this.sul.Size = new System.Drawing.Size(90, 20);
+            this.sul.TabIndex = 7;
+            this.sul.Text = "Sueldo Base";
+            // 
+            // suelbas
+            // 
+            this.suelbas.Lines = new string[0];
+            this.suelbas.Location = new System.Drawing.Point(183, 70);
+            this.suelbas.MaxLength = 32767;
+            this.suelbas.Name = "suelbas";
+            this.suelbas.PasswordChar = '\0';
+            this.suelbas.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.suelbas.SelectedText = "";
+            this.suelbas.Size = new System.Drawing.Size(151, 23);
+            this.suelbas.TabIndex = 13;
+            this.suelbas.UseSelectable = true;
+            // 
             // Panel_Gerente_Finanzas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3616,7 +3631,6 @@
         private System.Windows.Forms.Label nomEmp;
         private System.Windows.Forms.Label apellido;
         private System.Windows.Forms.Label direc;
-        private System.Windows.Forms.Label suelbas;
         private System.Windows.Forms.Label tip;
         private MetroFramework.Controls.MetroButton btnEnvEmp;
         private System.Windows.Forms.Label usuario;
@@ -3853,5 +3867,7 @@
         private MetroFramework.Controls.MetroButton regTipEmp;
         private MetroFramework.Controls.MetroButton GenRepIngEgr;
         private MetroFramework.Controls.MetroButton btnConfig;
+        private MetroFramework.Controls.MetroTextBox suelbas;
+        private System.Windows.Forms.Label sul;
     }
 }
